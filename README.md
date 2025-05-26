@@ -1,7 +1,6 @@
 # auto-scripts
 
 ## File Tree
-<pre>
 ```text
 auto-scripts/
 ├── env/
@@ -11,4 +10,3 @@ auto-scripts/
     ├── git-push-all.sh
     └── git-remove-ignore.sh
 ```
-</pre>
