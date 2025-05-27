@@ -5,7 +5,8 @@
 ```text
 auto-scripts/
 ├── env/
-│   └── virtualenv-setup.sh
+│   ├── uv-activate.sh
+│   └── virtualenv-activate.sh
 └── git/
     ├── git-clone-auto.sh
     ├── git-push-all.sh
