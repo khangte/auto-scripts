@@ -1,8 +1,26 @@
 #!/bin/bash
 
-# ✅ uv + Python 3.11 기반 가상환경 자동 설치 및 진입
+#########################
+# 파일 실행 방법
+# . uv-activate.sh
+#########################
 
+# ✅ uv + Python 3.11 기반 가상환경 자동 설치 및 진입
 echo "🔎 [INFO] uv 기반 가상환경 자동 설정 스크립트 실행 중..."
+
+# 현재 쉘이 하위 셸인지 확인 (source로 실행된 경우 $0은 'bash', 아니면 파일명)
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+  echo "
+❗ 이 스크립트는 하위 셸에서 실행되고 있어 가상환경이 현재 셸에 적용되지 않습니다.
+👉 반드시 아래와 같이 'source' 또는 '.' 명령으로 실행해야 합니다:
+
+    source uv-activate.sh
+    . uv-activate.sh <== 해당 명령 실행
+
+⛔ 종료합니다.
+"
+  exit 1
+fi
 
 # 1. uv 설치 확인
 if ! command -v uv &> /dev/null; then

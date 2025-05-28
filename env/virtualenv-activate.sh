@@ -6,8 +6,8 @@ if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
 ❗ 이 스크립트는 하위 셸에서 실행되고 있어 가상환경이 현재 셸에 적용되지 않습니다.
 👉 반드시 아래와 같이 'source' 또는 '.' 명령으로 실행해야 합니다:
 
-    source setup-virtualenv.sh
-    . setup-virtualenv.sh
+    source virtualenv-activate.sh
+    . virtualenv-activate.sh <== 해당 명령 실행
 
 ⛔ 종료합니다.
 "
