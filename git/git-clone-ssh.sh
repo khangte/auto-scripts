@@ -1,5 +1,26 @@
 #!/bin/bash
 
+: <<'END'
+자동 GitHub 리포지토리 클론 스크립트
+
+사용법:
+  ./git-clone-ssh.sh
+
+설정해야 할 변수:
+  - REPO_SSH: 클론할 Git 리포지토리의 SSH 주소
+  - TARGET_DIR: 리포지토리를 클론할 로컬 디렉토리 경로
+  - GIT_EMAIL: GitHub 계정에 등록된 이메일 주소
+
+기능:
+  - SSH 키가 없을 경우 자동 생성 (expect 사용)
+  - 공개 키 출력 (GitHub에 등록 필요)
+  - SSH 연결 성공 시 자동으로 리포지토리 클론
+
+주의:
+  - 'expect' 명령어가 설치되어 있어야 함
+  - GitHub에 공개 키를 등록한 뒤 30초 대기
+END
+
 REPO_SSH="git@github.com:khangte/.git"
 TARGET_DIR=""
 GIT_EMAIL="minhyuk00321@gmail.com"

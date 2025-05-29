@@ -1,5 +1,10 @@
 #!/bin/bash
 
+: <<'END'
+파일 실행 방법
+. virtualenv-activate.sh
+END
+
 # 현재 쉘이 하위 셸인지 확인 (source로 실행된 경우 $0은 'bash', 아니면 파일명)
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
   echo "
