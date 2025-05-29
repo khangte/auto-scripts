@@ -8,7 +8,8 @@ auto-scripts/
 │   ├── uv-activate.sh
 │   └── virtualenv-activate.sh
 └── git/
-    ├── git-clone-auto.sh
+    ├── git-clone-ssh.sh
+    ├── git-init-push.sh
     ├── git-push-all.sh
     └── git-remove-ignore.sh
 ```
