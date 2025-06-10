@@ -9,6 +9,7 @@ auto-scripts/
 │   └── virtualenv-activate.sh
 └── git/
     ├── git-clone-ssh.sh
+    ├── git-delete-file.sh
     ├── git-init-push.sh
     ├── git-push-all.sh
     └── git-remove-ignore.sh
