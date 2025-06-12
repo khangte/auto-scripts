@@ -24,6 +24,7 @@
 - Git이 초기화된 상태여야 하며, 원격 저장소가 설정되어 있어야 합니다.
 END
 
+
 set -e
 
 read -p "Git에서 제거하고 .gitignore에 추가할 파일명을 입력하세요: " target_file

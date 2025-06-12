@@ -21,6 +21,7 @@
   - GitHub에 공개 키를 등록한 뒤 30초 대기
 END
 
+
 REPO_SSH="git@github.com:khangte/.git"
 TARGET_DIR=""
 GIT_EMAIL="minhyuk00321@gmail.com"
